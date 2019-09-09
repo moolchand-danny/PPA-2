@@ -101,7 +101,7 @@ public class main {
 		if ((bmival >= 25) && (bmival < 30)) {
 			 category = "overweight";
 		}
-		if (bmival < 30) {
+		if (bmival > 30) {
 			 category = "obese";
 		}
 		
