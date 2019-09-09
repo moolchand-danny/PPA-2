@@ -23,7 +23,7 @@ public class mainTest {
 		InputStream in = new ByteArrayInputStream(input.getBytes());
 		System.setIn(in);
 				
-		assertEquals("Should calculate the correct distance", expectedDistance, main.distance(), 0.001);
+		assertEquals("Should calculate the correct distance 10 with inputs (0,0) (0,10)", expectedDistance, main.distance(), 0.001);
 	}
 
 }
