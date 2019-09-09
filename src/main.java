@@ -91,7 +91,7 @@ public class main {
 		float sqm = (meters * meters);
 		float bmival = (kgs / sqm);
 		
-		String category;
+		String category = "";
 		if (bmival <= 18.5) {
 			 category = "underweight";
 		}

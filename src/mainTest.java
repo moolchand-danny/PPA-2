@@ -17,7 +17,7 @@ public class mainTest {
 	{
 		main main = new main();
 		
-		String input = "0\n0\n0\n12\n"; 
+		String input = "0\n0\n0\n10\n"; 
 		int expectedDistance = 10;
 		
 		InputStream in = new ByteArrayInputStream(input.getBytes());
