@@ -27,10 +27,10 @@ public class main {
 			case 0:
 				break;
 			case 1:
-				//System.out.println("Case 1");
+				bmi();
 				break;
 			case 2:
-				//System.out.println("Case 2");
+				retire();
 				break;
 			case 3:
 				distance();
@@ -74,7 +74,7 @@ public class main {
 		return distance;
 	}
 
-	public float bmi() {
+	public static float bmi() {
 		Scanner myObj = new Scanner(System.in);
 		
 		System.out.println("Enter your boodyweight in pounds.");
@@ -111,7 +111,7 @@ public class main {
 		return bmival;
 	}
 	
-	public int retire() {
+	public static int retire() {
 		Scanner myObj = new Scanner(System.in);
 		
 		System.out.println("Enter your current age in years.");
