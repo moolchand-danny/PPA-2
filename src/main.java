@@ -74,6 +74,68 @@ public class main {
 		return distance;
 	}
 
+	public float bmi() {
+		Scanner myObj = new Scanner(System.in);
+		
+		System.out.println("Enter your boodyweight in pounds.");
+		float lbs = myObj.nextFloat();
+		float kgs = (float)(lbs * 0.45);
+		
+		System.out.println("Enter how many whole feel tall you are. E.g. if I am 5 feet 2 inches tall I will enter 5.");
+		float feet = myObj.nextInt();
+		System.out.println("Enter how many inches taller you are than your whole foot measurement.");
+		float inches = myObj.nextInt();
+		
+		float totalin = (feet * 12) + inches;
+		float meters = (float)(totalin * .025);
+		float sqm = (meters * meters);
+		float bmival = (kgs / sqm);
+		
+		String category;
+		if (bmival <= 18.5) {
+			 category = "underweight";
+		}
+		if ((bmival > 18.5) && (bmival < 25)) {
+			 category = "normal weight";
+		}
+		if ((bmival >= 25) && (bmival < 30)) {
+			 category = "overweight";
+		}
+		if (bmival < 30) {
+			 category = "obese";
+		}
+		
+		System.out.println("Your BMI is " + bmival + ", which puts you in the " + category + " category.");
+		
+		
+		return bmival;
+	}
+	
+	public int retire() {
+		Scanner myObj = new Scanner(System.in);
+		
+		System.out.println("Enter your current age in years.");
+		int age = myObj.nextInt();
+		
+		System.out.println("Enter your annual salary to the nearest thousand.");
+		int salary = myObj.nextInt();
+		
+		System.out.println("Enter what percentage of your salary you save. Estimate to the nearest whole percent.");
+		int save = myObj.nextInt();
+		
+		System.out.println("Enter how much you expect to have saved to comfortably retire. Estimate to the nearest whole number.");
+		int goalamt = myObj.nextInt();
+		
+		float goalage = (float)(age + (goalamt)/(salary * save * 1.35));
+				
+		if (goalage < 100) {
+			System.out.println("You will reach your retirement savings goal at the age of " + goalage + ".");
+		}
+		else 
+			System.out.println("Assuming you live to 100 years old, you will die before reaching your retirement savings goal.");
+		
+		return 2;
+	}
 
 
 }
