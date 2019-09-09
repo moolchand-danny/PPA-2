@@ -24,8 +24,6 @@ public class main {
 
 			switch (menuOption)
 			{
-			case 0:
-				break;
 			case 1:
 				bmi();
 				break;
