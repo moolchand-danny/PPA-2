@@ -35,16 +35,16 @@ public class mainTest {
 	{
 		main main = new main();
 
-		String input = "";
-		float expectedBmi = 25;
+		String input = "200\n5\n6\n";
+		float expectedBmi = (float)33.057854;
 		InputStream in = new ByteArrayInputStream(input.getBytes());
 		System.setIn(in);	
-		assertEquals();
+		assertEquals("Should calculate the correct BMI 33.057854 with weight 200 lbs, height 5 ft 6 in", expectedBmi, main.bmi(), 0.001);
 		
-		input = "";
+		input = "100\n6\n4\n";
 		in = new ByteArrayInputStream(input.getBytes());
 		System.setIn(in);
-		assertTrue();
+		assertTrue("Should place person in the underweight category", main.bmi() < 18.5);
 		
 	}
 	@Test
