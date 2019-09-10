@@ -79,13 +79,24 @@ public class mainTest {
 			assertTrue("Should tell the user they will die before reaching their goal :'( ", main.retire() > 100);
 	
 		}
-	
-	
-	
+		
 	
 		@Test
 		public void testSplitTip()
 		{
+			main main = new main();
+			
+			String input = "0\n0\n";
+			double expectedValue = 0.0;
+			InputStream in = new ByteArrayInputStream(input.getBytes());
+			System.setIn(in);
+			assertEquals("Should return a precise 0.0", expectedValue, main.splitTip(), 0.000 );
+			
+			input = "15.157345\n3\n";
+			expectedValue = 17.43;
+			in = new ByteArrayInputStream(input.getBytes());
+			System.setIn(in);
+			assertEquals("Should return a value precisely equal to expectedValue, with 2 decimal places", expectedValue, main.splitTip(), 0.000 );	
 			
 		}
 

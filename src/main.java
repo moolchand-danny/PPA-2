@@ -1,5 +1,6 @@
 import java.util.Scanner;
 import java.lang.Math;
+import java.text.DecimalFormat;
 
 
 public class main {
@@ -49,10 +50,33 @@ public class main {
 
 	}
 	
-	public static float splitTip ()
+	public static double splitTip ()
 	{
+		Scanner scan = new Scanner(System.in);
+		DecimalFormat df = new DecimalFormat("#.00"); 
+	
+		double billTotal = 0;
+		int numGuests = 0;
+		double dinnerAmount = 0;
 		
-		return 0;
+		System.out.print("Enter the total of the bill: $");
+		billTotal = Double.parseDouble(df.format(scan.nextDouble()));
+
+		System.out.print("Enter the number of paying guests: ");
+		numGuests = scan.nextInt();
+		
+		//dinnerAmount = (Math.round((billTotal * 1.15)*100.0))/100.0;
+		dinnerAmount = Double.parseDouble(df.format(billTotal * 1.15));
+
+		System.out.println("Total dinner amout is: $" + dinnerAmount);
+		
+		for(int i = 1; i <= numGuests; i++)
+		{
+			System.out.println("guest" + i + " - $" + Double.parseDouble(df.format(dinnerAmount / numGuests)));
+		}
+		
+		
+		return dinnerAmount;
 	}
 
 	public static float distance ()
