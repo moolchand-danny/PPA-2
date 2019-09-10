@@ -17,54 +17,56 @@ public class mainTest {
 	{
 		main main = new main();
 		
-		String input = "0\n0\n0\n10\n"; 
+		String input = "0\n 0\n 0\n 10\n"; 
 		double expectedDistance = 10;
 		InputStream in = new ByteArrayInputStream(input.getBytes());
 		System.setIn(in);	
 		assertEquals("Should calculate the correct distance 10 with inputs (0,0) (0,10)", expectedDistance, main.distance(), 0.001);
 		
 		
-		input = "12\n14\n2\n3\n"; 
+		input = "12\n 14\n 2\n 3\n"; 
 		in = new ByteArrayInputStream(input.getBytes());
 		System.setIn(in);	
 		assertTrue("Should calculate a positive distance",main.distance() >= 0);
 	}
 	
-	@Test
-	public void testBMI()
-	{
-		main main = new main();
-
-		String input = "";
-		float expectedBmi = 25;
-		InputStream in = new ByteArrayInputStream(input.getBytes());
-		System.setIn(in);	
-		assertEquals();
-		
-		input = "";
-		in = new ByteArrayInputStream(input.getBytes());
-		System.setIn(in);
-		assertTrue();
-		
-	}
-	@Test
-	public void testRetire()
-	{
-		main main = new main();
-
-		String input = "";
-		float expectedAge = 75;
-		InputStream in = new ByteArrayInputStream(input.getBytes());
-		System.setIn(in);	
-		assertEquals();
-		
-		
-		input = "";
-		in = new ByteArrayInputStream(input.getBytes());
-		System.setIn(in);
-		assertTrue();
-		
-	}
+//	@Test
+//	public void testBMI()
+//	{
+//		main main = new main();
+//
+//		String input = "";
+//		float expectedBmi = 25;
+//		InputStream in = new ByteArrayInputStream(input.getBytes());
+//		System.setIn(in);	
+//		assertEquals();
+//		
+//		input = "";
+//		in = new ByteArrayInputStream(input.getBytes());
+//		System.setIn(in);
+//		assertTrue();
+//		
+//	}
+//	
+//	@Test
+//	public void testRetire()
+//	{
+//		main main = new main();
+//
+//		String input = "";
+//		float expectedAge = 75;
+//		InputStream in = new ByteArrayInputStream(input.getBytes());
+//		System.setIn(in);	
+//		assertEquals();
+//		
+//		
+//		input = "";
+//		in = new ByteArrayInputStream(input.getBytes());
+//		System.setIn(in);
+//		assertTrue();
+//		
+//	}
+	
 	@Test
 	public void testSplitTip()
 	{
