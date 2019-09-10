@@ -141,7 +141,7 @@ public class main {
 		else 
 			System.out.println("Assuming you live to 100 years old, you will die before reaching your retirement savings goal.");
 		
-		return 2;
+		return (int) ageOfRetirement;
 	}
 
 
