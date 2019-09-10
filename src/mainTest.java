@@ -33,16 +33,42 @@ public class mainTest {
 	@Test
 	public void testBMI()
 	{
+		main main = new main();
+
+		String input = "";
+		float expectedBmi = 25;
+		InputStream in = new ByteArrayInputStream(input.getBytes());
+		System.setIn(in);	
+		assertEquals();
+		
+		input = "";
+		in = new ByteArrayInputStream(input.getBytes());
+		System.setIn(in);
+		assertTrue();
 		
 	}
 	@Test
 	public void testRetire()
 	{
+		main main = new main();
+
+		String input = "";
+		float expectedAge = 75;
+		InputStream in = new ByteArrayInputStream(input.getBytes());
+		System.setIn(in);	
+		assertEquals();
+		
+		
+		input = "";
+		in = new ByteArrayInputStream(input.getBytes());
+		System.setIn(in);
+		assertTrue();
 		
 	}
 	@Test
 	public void testSplitTip()
 	{
+		
 		
 	}
 
