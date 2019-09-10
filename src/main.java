@@ -77,7 +77,7 @@ public class main {
 	public static float bmi() {
 		Scanner myObj = new Scanner(System.in);
 		
-		System.out.println("Enter your boodyweight in pounds.");
+		System.out.println("Enter your bodyweight in pounds.");
 		float lbs = myObj.nextFloat();
 		float kgs = (float)(lbs * 0.45);
 		
