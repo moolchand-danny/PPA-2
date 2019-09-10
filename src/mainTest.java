@@ -17,19 +17,20 @@ public class mainTest {
 	{
 		main main = new main();
 		
-		String input = "0\n 0\n 0\n 10\n"; 
+		String input = "0\n0\n0\n10\n"; 
 		double expectedDistance = 10;
 		InputStream in = new ByteArrayInputStream(input.getBytes());
 		System.setIn(in);	
 		assertEquals("Should calculate the correct distance 10 with inputs (0,0) (0,10)", expectedDistance, main.distance(), 0.001);
 		
 		
-		input = "12\n 14\n 2\n 3\n"; 
+		input = "12\n14\n2\n3\n"; 
 		in = new ByteArrayInputStream(input.getBytes());
 		System.setIn(in);	
 		assertTrue("Should calculate a positive distance",main.distance() >= 0);
 	}
 	
+<<<<<<< HEAD
 <<<<<<< HEAD
 //	@Test
 //	public void testBMI()
@@ -69,11 +70,14 @@ public class mainTest {
 //	}
 	
 =======
+=======
+>>>>>>> parent of 0463ffc... test
 	@Test
 	public void testBMI()
 	{
 		main main = new main();
 
+<<<<<<< HEAD
 		String input = "200\n5\n6\n";
 		float expectedBmi = (float)33.057854;
 		InputStream in = new ByteArrayInputStream(input.getBytes());
@@ -84,6 +88,18 @@ public class mainTest {
 		in = new ByteArrayInputStream(input.getBytes());
 		System.setIn(in);
 		assertTrue("Should place person in the underweight category", main.bmi() < 18.5);
+=======
+		String input = "";
+		float expectedBmi = 25;
+		InputStream in = new ByteArrayInputStream(input.getBytes());
+		System.setIn(in);	
+		assertEquals();
+		
+		input = "";
+		in = new ByteArrayInputStream(input.getBytes());
+		System.setIn(in);
+		assertTrue();
+>>>>>>> parent of 0463ffc... test
 		
 	}
 	@Test
@@ -91,6 +107,7 @@ public class mainTest {
 	{
 		main main = new main();
 
+<<<<<<< HEAD
 		String input = "99\n10000\n4\n30000\n";
 		float expectedAge = (float)99.55556;
 		InputStream in = new ByteArrayInputStream(input.getBytes());
@@ -105,6 +122,21 @@ public class mainTest {
 		
 	}
 >>>>>>> b62d65d8a97bb75cc9bd6ffcd2bac1a3b4828a90
+=======
+		String input = "";
+		float expectedAge = 75;
+		InputStream in = new ByteArrayInputStream(input.getBytes());
+		System.setIn(in);	
+		assertEquals();
+		
+		
+		input = "";
+		in = new ByteArrayInputStream(input.getBytes());
+		System.setIn(in);
+		assertTrue();
+		
+	}
+>>>>>>> parent of 0463ffc... test
 	@Test
 	public void testSplitTip()
 	{
