@@ -52,17 +52,17 @@ public class mainTest {
 	{
 		main main = new main();
 
-		String input = "";
-		float expectedAge = 75;
+		String input = "99\n10000\n4\n30000\n";
+		float expectedAge = (float)99.55556;
 		InputStream in = new ByteArrayInputStream(input.getBytes());
 		System.setIn(in);	
-		assertEquals();
+		assertEquals("Should calculate the correct retirement age of 99.55556 starting at 99, making 10,000 per year, saving 4% and settting a goal of 30000", expectedAge, main.retire(), 0.001);
 		
 		
-		input = "";
+		input = "99\n100\n1\n1000000\n";
 		in = new ByteArrayInputStream(input.getBytes());
 		System.setIn(in);
-		assertTrue();
+		assertTrue("Should tell the user they will die before reaching their goal :'( ", main.retire() > 100);
 		
 	}
 	@Test
