@@ -18,12 +18,32 @@ public class mainTest {
 		main main = new main();
 		
 		String input = "0\n0\n0\n10\n"; 
-		int expectedDistance = 10;
-		
+		double expectedDistance = 10;
 		InputStream in = new ByteArrayInputStream(input.getBytes());
-		System.setIn(in);
-				
+		System.setIn(in);	
 		assertEquals("Should calculate the correct distance 10 with inputs (0,0) (0,10)", expectedDistance, main.distance(), 0.001);
+		
+		
+		input = "12\n14\n2\n3\n"; 
+		in = new ByteArrayInputStream(input.getBytes());
+		System.setIn(in);	
+		assertTrue("Should calculate a positive distance",main.distance() >= 0);
+	}
+	
+	@Test
+	public void testBMI()
+	{
+		
+	}
+	@Test
+	public void testRetire()
+	{
+		
+	}
+	@Test
+	public void testSplitTip()
+	{
+		
 	}
 
 }

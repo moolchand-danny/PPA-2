@@ -24,8 +24,6 @@ public class main {
 
 			switch (menuOption)
 			{
-			case 0:
-				break;
 			case 1:
 				bmi();
 				break;
@@ -36,7 +34,7 @@ public class main {
 				distance();
 				break;
 			case 4:
-				//System.out.println("Case 4");
+				splitTip();
 				break;
 			case 5:
 				System.out.println("Exiting. Thank You.");
@@ -49,6 +47,11 @@ public class main {
 			}
 		}
 
+	}
+	
+	public static float splitTip ()
+	{
+		return 0;
 	}
 
 	public static float distance ()
