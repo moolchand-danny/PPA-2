@@ -64,8 +64,7 @@ public class main {
 
 		System.out.print("Enter the number of paying guests: ");
 		numGuests = scan.nextInt();
-		
-		//dinnerAmount = (Math.round((billTotal * 1.15)*100.0))/100.0;
+	
 		dinnerAmount = Double.parseDouble(df.format(billTotal * 1.15));
 
 		System.out.println("Total dinner amout is: $" + dinnerAmount);
