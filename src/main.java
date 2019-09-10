@@ -115,7 +115,7 @@ public class main {
 		return bmival;
 	}
 	
-	public static int retire() {
+	public static float retire() {
 		Scanner myObj = new Scanner(System.in);
 		
 		System.out.println("Enter your current age in years.");
@@ -142,7 +142,7 @@ public class main {
 		else 
 			System.out.println("Assuming you live to 100 years old, you will die before reaching your retirement savings goal.");
 		
-		return (int) ageOfRetirement;
+		return ageOfRetirement;
 	}
 
 
