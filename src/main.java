@@ -118,21 +118,25 @@ public class main {
 		Scanner myObj = new Scanner(System.in);
 		
 		System.out.println("Enter your current age in years.");
-		int age = myObj.nextInt();
+		float currentAge = myObj.nextFloat();
 		
 		System.out.println("Enter your annual salary to the nearest thousand.");
-		int salary = myObj.nextInt();
+		float annualSalary = myObj.nextFloat();
 		
 		System.out.println("Enter what percentage of your salary you save. Estimate to the nearest whole percent.");
-		int save = myObj.nextInt();
+		float individualSave = myObj.nextFloat();
 		
 		System.out.println("Enter how much you expect to have saved to comfortably retire. Estimate to the nearest whole number.");
-		int goalamt = myObj.nextInt();
+		float goalAmount = myObj.nextFloat();
 		
-		float goalage = (float)(age + (goalamt)/(salary * save * 1.35));
+		float yearlySavings = (float)(annualSalary * individualSave * 1.35);
+		
+		float yearsToRetire = (goalAmount/yearlySavings);
+		
+		float ageOfRetirement = currentAge + yearsToRetire;
 				
-		if (goalage < 100) {
-			System.out.println("You will reach your retirement savings goal at the age of " + goalage + ".");
+		if (ageOfRetirement < 100) {
+			System.out.println("You will reach your retirement savings goal at the age of " + ageOfRetirement + ".");
 		}
 		else 
 			System.out.println("Assuming you live to 100 years old, you will die before reaching your retirement savings goal.");
