@@ -51,6 +51,7 @@ public class main {
 	
 	public static float splitTip ()
 	{
+		
 		return 0;
 	}
 
