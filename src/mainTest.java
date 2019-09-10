@@ -32,6 +32,9 @@ public class mainTest {
 	
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 03d8ee1... Merge branch 'master' of https://github.com/TimCrowley99/PPA-1
 //	@Test
 //	public void testBMI()
 //	{
@@ -69,6 +72,7 @@ public class mainTest {
 //		
 //	}
 	
+<<<<<<< HEAD
 =======
 =======
 >>>>>>> parent of 0463ffc... test
@@ -137,6 +141,8 @@ public class mainTest {
 		
 	}
 >>>>>>> parent of 0463ffc... test
+=======
+>>>>>>> parent of 03d8ee1... Merge branch 'master' of https://github.com/TimCrowley99/PPA-1
 	@Test
 	public void testSplitTip()
 	{
