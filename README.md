@@ -6,7 +6,9 @@
 
 ### Naming and Organizational Conventions  
 
-For the naming convention...
+We followed accepted Java naming conventions when naming our tests to reflect the function they served to test.
+Due to the use of Java, we had one class for the suite of JUnit tests, then constructed a second class to perform
+the functions required by the prompt. 
 
 ---
 
@@ -18,7 +20,12 @@ The following are needed in order to properly run this program and the unit test
 [JUnit4](https://github.com/junit-team/junit4/wiki/Download-and-Install)  
 [EclEmma](https://www.eclemma.org/)  
 
-This...
+All of the pieces of software presented above working in unison allows a user to access the offered functions, see that
+a suite of JUnit tests serve as docuementation for functionality, and verify the code coverage put forth in this report.
+To access function use, the user would run our main.java file in their Eclipse IDE, and answer the questions put forth
+by the console. To access the suite of tests, the user would run mainTest.java to see all of the tests pass. EclEmma is 
+the plug-in for Eclipse that grants access to comprehensive code coverage reports, and can be seen by pressing the button
+directly to the right of the usual run button.
 
 ---
 
@@ -43,7 +50,13 @@ My experience was ...
 
 ### Timothy's Unit Testing & TDD Experience  
 
-My experience was ...
+My personal experience with unit testing and TDD was overall a good one, but sometimes consisted of frustration at not
+moving as efficiently as I believe it could be. It felt like if I began by addressing the tests I would make as I created 
+my functions, rather than needing to lay them all out before writing any code, the two different aspects could have fed off 
+of each other and led to more cohesion. I think it's extremely useful for a project to spend an explicit amount of time
+laying out requirements and expectations. There can be no discipline without direction of knowing which way you wish to go,
+and communicating clearly about what is expected surely ends in a better result. In short, I think TDD helps to flesh out 
+specifications, but is a hinderance when it treated as a requirement before delving into functionality. 
 
 ---
 
