@@ -4,17 +4,38 @@
 
 ----
 
+### Table of Contents
+
+1. [Naming and Organizational Conventions](#naming-and-organizational-conventions)  
+2. [Setup and Execution Instructions](#setup-and-execution-instructions)  
+3. [Output of All Test Suites](#output-of-all-test-suites)  
+4. [Test Coverage Report](#test-coverage-report)   
+5. [Danny's Unit Testing & TDD Experience](#dannys-unit-testing--tdd-experience)  
+6. [Timothy's Unit Testing & TDD Experience](#timothys-unit-testing--tdd-experience)  
+7. [Screencast #1: Two Iterations of RGR Process](#screencast-1-two-iterations-of-rgr-process)  
+8. [Screencast #2: All Functions](#screencast-2-all-functions)  
+
+----
+
 ### Naming and Organizational Conventions  
 
-We followed accepted Java naming conventions when naming our tests to reflect the function they served to test.
-Due to the use of Java, we had one class for the suite of JUnit tests, then constructed a second class to perform
-the functions required by the prompt. 
+We followed accepted Java naming conventions when naming our tests to reflect the function they served to test. Due to the use of Java, we had one class for the suite of JUnit tests, then constructed a second class to perform the functions required by the prompt.
+
+| Calculator Functions | Unit Test Function |
+| --- | --- |
+| bmi()  | testBMI()  |
+| retire()  | testRetire()  |
+| distance()  | testDistance()  |
+| splitTip()  | testSplitTip()  |
+
+The calculator functions were all located in a main class and then called by standard convention "class.function()" when it was needed in the unit test function. The unit test file was similarily structured by having a single class and having individual functions for testing each calculator function. The unit test functions contained different "assertTrue", "assertEquals", etc. calls for validating the functions. 
 
 ---
 
 ### Setup and Execution Instructions  
 
-The following are needed in order to properly run this program and the unit tests associated with it.  
+As stated previously, this project was coded in Java and testing using the JUnit4 framework. It was coded using the Eclipse IDE and compiled with the Java SE Development Kit 8. For testing code coverage, we used an eclipse plugin EclEmma. Listed below are the download links:
+
 [Java SE Development Kit 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
 [Eclipse IDE](https://www.eclipse.org/eclipseide/2018-12/)  
 [JUnit4](https://github.com/junit-team/junit4/wiki/Download-and-Install)  
@@ -44,7 +65,7 @@ This is the test coverage report for our unit tests. All of our functions and te
 
 ### Danny's Unit Testing & TDD Experience  
 
-My experience was ...
+I enjoyed the experience with unit testing and the whole TDD prcoess. I completly understand the use, benefits, cons, and practicality of TDD; however, sometimes I was confused on what exactly to test when in the RGR process. Generally in the last three years of college, I have always written code first and tested it later, which is the complete opposite of how TDD works. When writing the tests first, I sometimes became lost on how to break up the function into testable pieces. For instance, when writing the distance function, I was unsure if we were supposed to pass the parameters into the function or have the user enter the variables after the function had been called. After deciding to go with the second option, we ran into another road-block on how to simulate the user entering inputs into the system console. After researching, I learned about InputStream and System.in() which allows us to simulate user input. Overall though, this has been a great learning experience for me as I learned how to use TDD - its pros/cons, how to write JUnit4 tests, and how to write in markdown. 
 
 ---
 
@@ -70,5 +91,5 @@ specifications, but is a hinderance when it treated as a requirement before delv
 
 ### Screencast #2: All Functions
 
-![Running PPA-1 and testing all functions](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/Screencast_functions.gif)  
+![Running PPA-1 and testing all functions](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/Screencast_functions1.gif)  
 
