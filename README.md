@@ -57,7 +57,7 @@ directly to the right of the usual run button.
 
 This is picture proof of all our test cases passes for all functions. 4/4 Runs with all green (pass).
 
-![Output of test cases passing](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/readme_assets/Test_Outputs.JPG)
+![Output of test cases passing](https://raw.githubusercontent.com/moolchand-danny/PPA-2/master/readme_assets/Test_Outputs.JPG)
 
 ---
 
@@ -65,7 +65,7 @@ This is picture proof of all our test cases passes for all functions. 4/4 Runs w
 
 This is the test coverage report for our unit tests. All of our functions and tests reached above the minimum 85% coverage.
 
-![Test coverage report of PPA-1](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/readme_assets/Code%20Coverage.JPG)
+![Test coverage report of PPA-1](https://raw.githubusercontent.com/moolchand-danny/PPA-2/master/readme_assets/Code%20Coverage.JPG)
 
 ---
 
@@ -90,10 +90,10 @@ specifications, but is a hinderance when it treated as a requirement before delv
 ### Screencast #1: Two Iterations of RGR Process
 
 Screencast for the distance() and testDistance() functions. Using the Red-Green-Refactor process of Test Driven Development. Done by Danny Moolchand.
-![RGR process for distance()](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/readme_assets/Screencast_Distance.gif)  
+![RGR process for distance()](https://raw.githubusercontent.com/moolchand-danny/PPA-2/master/readme_assets/Screencast_Distance.gif)  
 
 Screencast for the bmi() and testBMI() functions. Using the Red-Green-Refactor process of Test Driven Development. Done by Timothy Crowley.
-![RGR process for bmi()](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/readme_assets/Screencast_bmi.gif)
+![RGR process for bmi()](https://raw.githubusercontent.com/moolchand-danny/PPA-2/master/readme_assets/Screencast_bmi.gif)
 
 ---
 
