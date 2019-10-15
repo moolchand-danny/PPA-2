@@ -6,14 +6,17 @@
 
 ### Table of Contents
 
-1. [Naming and Organizational Conventions](#naming-and-organizational-conventions)  
-2. [Setup and Execution Instructions](#setup-and-execution-instructions)  
-3. [Output of All Test Suites](#output-of-all-test-suites)  
-4. [Test Coverage Report](#test-coverage-report)   
-5. [Danny's Unit Testing & TDD Experience](#dannys-unit-testing--tdd-experience)  
-6. [Timothy's Unit Testing & TDD Experience](#timothys-unit-testing--tdd-experience)  
-7. [Screencast #1: Two Iterations of RGR Process](#screencast-1-two-iterations-of-rgr-process)  
-8. [Screencast #2: All Functions](#screencast-2-all-functions)  
+- [Professional Practice Assignment 1 - CIS4930](#professional-practice-assignment-1---cis4930)
+      - [Authors: Danny Moolchand, Timothy Crowley](#authors-danny-moolchand-timothy-crowley)
+    - [Table of Contents](#table-of-contents)
+    - [Naming and Organizational Conventions](#naming-and-organizational-conventions)
+    - [Setup and Execution Instructions](#setup-and-execution-instructions)
+    - [Output of All Test Suites](#output-of-all-test-suites)
+    - [Test Coverage Report](#test-coverage-report)
+    - [Danny's Unit Testing & TDD Experience](#dannys-unit-testing--tdd-experience)
+    - [Timothy's Unit Testing & TDD Experience](#timothys-unit-testing--tdd-experience)
+    - [Screencast #1: Two Iterations of RGR Process](#screencast-1-two-iterations-of-rgr-process)
+    - [Screencast #2: All Functions](#screencast-2-all-functions)
 
 ----
 
@@ -54,7 +57,7 @@ directly to the right of the usual run button.
 
 This is picture proof of all our test cases passes for all functions. 4/4 Runs with all green (pass).
 
-![Output of test cases passing](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/Test_Outputs.JPG)
+![Output of test cases passing](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/readme_assets/Test_Outputs.JPG)
 
 ---
 
@@ -62,7 +65,7 @@ This is picture proof of all our test cases passes for all functions. 4/4 Runs w
 
 This is the test coverage report for our unit tests. All of our functions and tests reached above the minimum 85% coverage.
 
-![Test coverage report of PPA-1](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/Code%20Coverage.JPG)
+![Test coverage report of PPA-1](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/readme_assets/Code%20Coverage.JPG)
 
 ---
 
@@ -87,15 +90,15 @@ specifications, but is a hinderance when it treated as a requirement before delv
 ### Screencast #1: Two Iterations of RGR Process
 
 Screencast for the distance() and testDistance() functions. Using the Red-Green-Refactor process of Test Driven Development. Done by Danny Moolchand.
-![RGR process for distance()](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/Screencast_Distance.gif)  
+![RGR process for distance()](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/readme_assets/Screencast_Distance.gif)  
 
 Screencast for the bmi() and testBMI() functions. Using the Red-Green-Refactor process of Test Driven Development. Done by Timothy Crowley.
-![RGR process for bmi()](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/Screencast_bmi.gif)
+![RGR process for bmi()](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/readme_assets/Screencast_bmi.gif)
 
 ---
 
 ### Screencast #2: All Functions
 
 Screencast for running all functions.
-![Running PPA-1 and testing all functions](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/Screencast_functions1.gif)  
+![Running PPA-1 and testing all functions](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/readme_assets/Screencast_functions1.gif)  
 
