@@ -100,5 +100,5 @@ Screencast for the bmi() and testBMI() functions. Using the Red-Green-Refactor p
 ### Screencast #2: All Functions
 
 Screencast for running all functions.
-![Running PPA-1 and testing all functions](https://raw.githubusercontent.com/TimCrowley99/PPA-1/master/readme_assets/Screencast_functions1.gif)  
+![Running PPA-1 and testing all functions](https://raw.githubusercontent.com/moolchand-danny/PPA-2/master/readme_assets/Screencast_functions1.gif)  
 
