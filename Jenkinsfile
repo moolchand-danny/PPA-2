@@ -17,9 +17,9 @@ pipeline {
             }
         }
 
-        stage('Test') {
+        stage('Junit Function Tests') {
             steps {
-                echo 'In Test Stage - Steps'
+                sh 'mvn test'
             }
             post {
                 always {
