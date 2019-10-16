@@ -17,20 +17,21 @@ pipeline {
             }
         }
 
-        stage('Junit Function Tests') {
+        stage('Junit Tests') {
             steps {
                 sh 'mvn test'
             }
-            post {
-                always {
-                    echo 'hello'
-                }
+        }
+
+        stage('HTTP Tests') {
+            steps {
+                echo 'Call HTTP Test file'
             }
         }
 
         stage('Deliver') {
             steps {
-                echo 'In Deliver Stage'
+                echo 'In Deliver Stage. Not sure if this is needed'
             }
         }
 

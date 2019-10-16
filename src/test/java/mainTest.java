@@ -21,7 +21,7 @@ public class mainTest {
 		String input = "0\n0\n0\n0\n";
 		InputStream in = new ByteArrayInputStream(input.getBytes());
 		System.setIn(in);
-		assertTrue("Should return a 0", main.distance() == 0);
+		assertTrue("Should return a 0", main.distance() == 1);
 
 		input = "0\n0\n0\n10\n"; 
 		double expectedDistance = 10;
