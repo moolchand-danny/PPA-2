@@ -7,7 +7,7 @@
 ### Table of Contents
 
   - [Table of Contents](#table-of-contents)
-  - [Prerequisites](#prerequisies)
+  - [Prerequisites](#prerequisites)
   - [Phase 1: Setting Up](#phase-1-setting-up-ppa1-code-for-continuous-integration)
   - [Phase 2: Docker Database](#phase-2-adding-data-storage--retreival-using-a-docker-database-container)
   - [Phase 3: Web-Enabled Interface](#phase-3-creating-a-web-enabled-interface-for-backend-functiosn)
@@ -15,7 +15,7 @@
 
 ----
 ### Prerequisites
-docker run <include rest of command for database install>
+docker run (**include rest of command for database install**)
 
 
 ### Phase 1: Setting Up PPA1 Code for Continuous Integration
