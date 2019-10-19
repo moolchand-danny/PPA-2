@@ -13,6 +13,9 @@
   - [Phase 4: Completed Pipeline and Stages](#phase-4-complete-ci-pipeline-with-build-and-test-stages)
 
 ----
+### Prerequisites
+docker run <include rest of command for database install>
+
 
 ### Phase 1: Setting Up PPA1 Code for Continuous Integration
 Phase 1 Stuff
