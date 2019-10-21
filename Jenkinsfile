@@ -23,7 +23,7 @@ pipeline {
             }
         }
         
-        stage('Junit Tests') {
+        stage('HTTP Tests') {
             steps {
                 sh 'mvn test -Dtest=httpTest'
             }
