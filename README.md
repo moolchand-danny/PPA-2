@@ -20,6 +20,7 @@ Docker command to setup MariaDB MySQL server:
 docker run --name database -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -d mariadb/server:10.3
 
 Base URL: localhost:5000
+
 | Path | Purpose |
 | --- | --- |
 | /distance  | View distance table in database  |
