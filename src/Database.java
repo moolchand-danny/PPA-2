@@ -181,7 +181,7 @@ class Database {
 
 			if ( conn != null ) {
 				conn.close();
-				System.out.println("Goodbye.");
+				System.out.println("Database Connection Closed.");
 			} else {
 				System.out.println("Error in closing database connection.");
 			}

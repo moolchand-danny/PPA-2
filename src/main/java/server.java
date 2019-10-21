@@ -6,6 +6,8 @@ import java.sql.ResultSet;
 import java.sql.ResultSetMetaData;
 import java.sql.Statement;
 
+import spark.Spark;
+
 public class server {
 
 	static Database D = new Database();
@@ -20,8 +22,8 @@ public class server {
 		{
 			System.out.println("Couldn't connect to database.");
 			//e.printStackTrace();
-		}	
-
+		}
+		
 		port(5000);
 		
 		get("", (req, res) -> "Look at README for proper URL(s)");
@@ -91,6 +93,9 @@ public class server {
 
 			return s;
 		});
+		
+		awaitInitialization();
+
 
 	}
 
@@ -168,7 +173,14 @@ public class server {
 
 	public static void stopServer()
 	{
+		System.out.println("Spark Server Closed.");
 		stop();
+		try {
+			Thread.sleep(500);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 	}
 
 

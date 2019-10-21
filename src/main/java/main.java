@@ -12,7 +12,11 @@ public class main {
 
 	public static void main(String[] args) {
 		
+		helpme.jarjar();
+		
 		s.run();
+		
+		
 
 		try
 		{
@@ -58,6 +62,8 @@ public class main {
 				System.out.println("Exiting. Thank You.");
 				exitMenu = true;
 				s.stopServer();
+				try {D.disconnect();} 
+				catch (Exception e) {}
 				scanner.close();
 				break;
 			default:
