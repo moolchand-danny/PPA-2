@@ -11,9 +11,7 @@ public class main {
 
 
 	public static void main(String[] args) {
-		
-		helpme.jarjar();
-		
+			
 		s.run();
 		
 		
