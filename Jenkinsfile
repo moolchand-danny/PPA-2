@@ -19,7 +19,13 @@ pipeline {
 
         stage('Junit Tests') {
             steps {
-                sh 'mvn test'
+                sh 'mvn test -Dtest=mainTest'
+            }
+        }
+        
+        stage('Junit Tests') {
+            steps {
+                sh 'mvn test -Dtest=httpTest'
             }
         }
 
