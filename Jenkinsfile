@@ -23,12 +23,6 @@ pipeline {
             }
         }
 
-        stage('HTTP Tests') {
-            steps {
-                echo 'Call HTTP Test file'
-            }
-        }
-
         stage('Deliver') {
             steps {
                 echo 'In Deliver Stage. Not sure if this is needed'
