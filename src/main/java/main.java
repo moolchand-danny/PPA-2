@@ -11,20 +11,24 @@ public class main {
 
 
 	public static void main(String[] args) {
-		
+
 		s.run();
-		
-		
 
 		try
 		{
+			D.execute("CREATE DATABASE IF NOT EXISTS ppa2");
 			D.connect("ppa2", "root", "1234");
 		} 
 		catch (Exception e) 
 		{
 			System.out.println("Couldn't connect to database.");
-			//e.printStackTrace();
-		}	
+		}
+
+		try {
+			initDatabaseTables();
+		} catch (Exception e1) {
+			System.out.println("Couldn't create tables.");
+		}
 
 		boolean exitMenu = false;
 
@@ -70,6 +74,27 @@ public class main {
 			}
 		}
 
+	}
+
+	private static void initDatabaseTables() throws Exception {
+
+		D.execute("CREATE TABLE IF NOT EXISTS distanceTable (\n" + 
+				"timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP PRIMARY KEY,\n" + 
+				"x1 int,\n" + 
+				"y1 int,\n" + 
+				"x2 int,\n" + 
+				"y2 int,\n" + 
+				"result float    \n" + 
+				");");
+
+		D.execute("CREATE TABLE IF NOT EXISTS bmiTable (\n" + 
+				"timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP PRIMARY KEY,\n" + 
+				"weight_lbs float,\n" + 
+				"height_ft float,\n" + 
+				"height_in float,\n" + 
+				"bmi float,\n" + 
+				"category VARCHAR(20)  \n" + 
+				");");
 	}
 
 	public static double splitTip ()
@@ -228,7 +253,7 @@ public class main {
 	}
 
 
-	
+
 
 
 }
