@@ -24,11 +24,11 @@ docker run --name database -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -d mariadb/s
 
 docker start database
 
-**Base URL:**
+**Base URL for Web Interface:**
 
 localhost:5000
 
-| **Path** | **Purpose** |
+| **Paths** | **Purpose** |
 | --- | --- |
 | /distance  | View distance table in database  |
 | /bmi  | View bmi table in database  |
