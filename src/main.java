@@ -11,18 +11,19 @@ public class main {
 
 
 	public static void main(String[] args) {
-			
+
 		s.run();
 
 		try
 		{
+			D.execute("CREATE DATABASE IF NOT EXISTS ppa2");
 			D.connect("ppa2", "root", "1234");
 		} 
 		catch (Exception e) 
 		{
 			System.out.println("Couldn't connect to database.");
 		}
-		
+
 		try {
 			initDatabaseTables();
 		} catch (Exception e1) {
@@ -76,7 +77,7 @@ public class main {
 	}
 
 	private static void initDatabaseTables() throws Exception {
-		
+
 		D.execute("CREATE TABLE IF NOT EXISTS distanceTable (\n" + 
 				"timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP PRIMARY KEY,\n" + 
 				"x1 int,\n" + 
@@ -85,7 +86,7 @@ public class main {
 				"y2 int,\n" + 
 				"result float    \n" + 
 				");");
-		
+
 		D.execute("CREATE TABLE IF NOT EXISTS bmiTable (\n" + 
 				"timestamp TIMESTAMP DEFAULT CURRENT_TIMESTAMP PRIMARY KEY,\n" + 
 				"weight_lbs float,\n" + 
@@ -252,7 +253,7 @@ public class main {
 	}
 
 
-	
+
 
 
 }
