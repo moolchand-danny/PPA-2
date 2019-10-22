@@ -20,6 +20,10 @@
 
 docker run --name database -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -d mariadb/server:10.3
 
+**To start the database if it does not start**
+
+docker start database
+
 **Base URL:**
 
 localhost:5000
