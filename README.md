@@ -8,6 +8,7 @@
 
   - [Table of Contents](#table-of-contents)
   - [Prerequisites](#prerequisites)
+  - [Project Setup](#project-setup)
   - [Phase 1: Setting Up](#phase-1-setting-up-ppa1-code-for-continuous-integration)
   - [Phase 2: Docker Database](#phase-2-adding-data-storage--retreival-using-a-docker-database-container)
   - [Phase 3: Web-Enabled Interface](#phase-3-creating-a-web-enabled-interface-for-backend-function)
@@ -15,18 +16,39 @@
 
 ----
 ### Prerequisites
-Docker command to setup MariaDB MySQL server:
+**Docker Command to Setup MariaDB MySQL Server:**
 
 docker run --name database -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -d mariadb/server:10.3
 
-Base URL: localhost:5000
+**Base URL:** 
+localhost:5000
 
-| Path | Purpose |
+| **Path** | **Purpose** |
 | --- | --- |
 | /distance  | View distance table in database  |
 | /bmi  | View bmi table in database  |
 | /distance/:x1/:y1/:x2/:y2  | Perform the distance calculation and store in database.   |
 | /bmi/:weight/:feet/:inches  | Perform the bmi calculation and store in database.  |
+
+### Project Setup
+
+This is a Java Maven project. In order to run this yourself, you need the following:
+
+[Java SE Development Kit 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
+[Eclipse IDE](https://www.eclipse.org/eclipseide/2018-12/)  
+[Docker](https://docs.docker.com/toolbox/toolbox_install_windows/)
+[Git](https://git-scm.com/downloads)
+
+**Setting up the project in Eclipse:**
+  1. Navigate to the directory where you want the project to be stored
+  2. Open terminal/command prompt and clone this repo to that directory
+  3. In Eclipse go to File > Import > Projects from Git > Existing Local Repository
+  4. Click on Add > Browse and navigate to the newly created PPA-2 folder.
+  5. Select the new project and click finish.
+  6. Click on PPA2-2 > Next
+  7. Select "Import Existing Eclipse Projects" > Next > Finish
+
+Now the project can be run from the "main.java" file. 
 
 
 ### Phase 1: Setting Up PPA1 Code for Continuous Integration
