@@ -82,6 +82,21 @@ public class httpTest {
 		assertTrue(serverStatusCode == 200);
 
 	}
+	
+	@Test
+	public void testDistancePathInputError() throws IOException
+	{
+		url = new URL(uri + "/distance/0.1/0.2/0.3/0.4");
+		connection = (HttpURLConnection) url.openConnection();
+		connection.setRequestMethod("GET");
+
+		int serverStatusCode = 0;
+		serverStatusCode = connection.getResponseCode();
+
+		//Asserts that the distance path gives a 500 error with bad input
+		assertTrue(serverStatusCode == 500);
+
+	}
 
 
 	@Test
@@ -98,62 +113,20 @@ public class httpTest {
 		assertTrue(serverStatusCode == 200);
 
 	}
-
-
+	
 	@Test
-	public void testDistancePathCalculation() throws IOException
+	public void testBmiPathInputError() throws IOException
 	{
-		url = new URL(uri + "/distance/0/0/100/100");
+		url = new URL(uri + "/bmi/a/b/c");
 		connection = (HttpURLConnection) url.openConnection();
 		connection.setRequestMethod("GET");
 
-		InputStream inputStream = connection.getInputStream();
+		int serverStatusCode = 0;
+		serverStatusCode = connection.getResponseCode();
 
-		BufferedReader in = new BufferedReader(
-				new InputStreamReader(
-						inputStream));
+		//Asserts that the bmi path gives error on bad input
+		assertTrue(serverStatusCode == 500);
 
-		StringBuilder response = new StringBuilder();
-		String currentLine;
-
-		while ((currentLine = in.readLine()) != null) 
-			response.append(currentLine);
-
-		in.close();
-
-		String responseBody = response.toString();
-		String trueValue = "The distance between (0, 0) and (100, 100) is 141.42136";
-		
-		assertTrue(responseBody.equals(trueValue));
-
-	}
-
-
-	@Test
-	public void testBmiPathCalculation() throws IOException
-	{
-		url = new URL(uri + "/bmi/200/5/10");
-		connection = (HttpURLConnection) url.openConnection();
-		connection.setRequestMethod("GET");
-
-		InputStream inputStream = connection.getInputStream();
-
-		BufferedReader in = new BufferedReader(
-				new InputStreamReader(
-						inputStream));
-
-		StringBuilder response = new StringBuilder();
-		String currentLine;
-
-		while ((currentLine = in.readLine()) != null) 
-			response.append(currentLine);
-
-		in.close();
-
-		String responseBody = response.toString();
-		String trueValue = "You weigh 200 pounds. Your height is 5 feet 10 inches. This means your BMI is 29.387754 which puts you in the overweight category";
-
-		assertTrue(responseBody.equals(trueValue));
 	}
 
 

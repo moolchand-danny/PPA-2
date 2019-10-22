@@ -28,6 +28,12 @@ pipeline {
                 sh 'mvn test -Dtest=httpTest'
             }
         }
+        
+        stage('Stub Tests') {
+            steps {
+                sh 'mvn test -Dtest=stubTest'
+            }
+        }
 
         stage('Deliver') {
             steps {
