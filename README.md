@@ -20,7 +20,8 @@
 
 docker run --name database -p 3306:3306 -e MYSQL_ROOT_PASSWORD=1234 -d mariadb/server:10.3
 
-**Base URL:** 
+**Base URL:**
+
 localhost:5000
 
 | **Path** | **Purpose** |
@@ -36,7 +37,7 @@ This is a Java Maven project. In order to run this yourself, you need the follow
 
 [Java SE Development Kit 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
 [Eclipse IDE](https://www.eclipse.org/eclipseide/2018-12/)  
-[Docker](https://docs.docker.com/toolbox/toolbox_install_windows/)
+[Docker](https://docs.docker.com/toolbox/toolbox_install_windows/)  
 [Git](https://git-scm.com/downloads)
 
 **Setting up the project in Eclipse:**
