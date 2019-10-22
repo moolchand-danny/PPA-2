@@ -37,6 +37,8 @@ localhost:5000
 
 ### Project Setup
 
+*Note: This project was created, run, and tested on Linux Ubuntu 18.04 LTS. I would suggest running this project on that operating system for the best results.*
+
 This is a Java Maven project. In order to run this yourself, you need the following:
 
 [Java SE Development Kit 8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)  
